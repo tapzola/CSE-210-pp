@@ -16,7 +16,7 @@ def main():
     def pick():
         pick = random.randint(1,14)
         return pick
-
+# create a while loop that you ensure your game keeps playing till user says no or they have 0 points
     playing_game = True
     while playing_game:
         card_deal = deal()
@@ -24,7 +24,7 @@ def main():
         question = input("Higher or lower? [h/l]:")
         card_pick = pick()
         print(f"The next card is {card_pick}")
-
+# create if statements to allow your program to do all the major possiblilties that the user may choose.
         if question == "h" and card_deal < card_pick:
             player_points += points_won
 
